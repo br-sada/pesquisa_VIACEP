@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <div class="content">
+        <form>
+            <div class="form-group">
+                <label for="CEP">CEP</label>
+                <input type="text" maxlength="8" class="cep" onfocus="this.value=''" placeholder="digitar o cep sem traços ou pontos">
+            </div>
+
+            <a id="button">Pesquisar</a>
+        </form>
+
+        <div class="results-content">
+            <div class="results">
+                <div>
+                    CEP:
+                    <div class="value" id="cep"></div>
+                </div>
+
+                <div>
+                    Logradouro:
+                    <div class="value" id="logradouro"></div>
+                </div>
+
+                <div>
+                    Bairro:
+                    <div class="value" id="bairro"></div>
+                </div>
+
+                <div>
+                    Cidade:
+                    <div class="value" id="localidade"></div>
+                </div>
+
+                <div>
+                    UF:
+                    <div class="value" id="uf"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+{% endblock content %}
